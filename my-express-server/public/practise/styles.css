@@ -1,0 +1,321 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&family=Dancing+Script:wght@700&display=swap');
+
+/* Navbar styles */
+nav {
+    background-color: #2c3e50; /* Blue background color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to navbar */
+    font-family: 'Poppins', sans-serif; /* Change font to Poppins */
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* White color for navbar links */
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 700; /* Bold font weight */
+    transition: color 0.3s ease; /* Add transition for color */
+}
+
+nav a:hover {
+    color: #ff4081; /* Change color on hover */
+}
+
+.navbar-brand {
+    cursor: pointer;
+    color: #fff; /* White color for navbar brand */
+    font-size: 24px; /* Increase font size */
+    font-weight: 700; /* Bold font weight */
+    transition: color 0.3s ease; /* Add transition for color */
+}
+
+.navbar-brand:hover {
+    color: #ff4081; /* Change color on hover */
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fde1ff; 
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    padding: 40px;
+    animation: slideIn 1s ease-in-out; /* Add slide-in animation */
+}
+
+.hero-left {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-left h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    animation: textAppear 1.5s ease-in-out; /* Add text appear animation */
+}
+
+.hero-left p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    animation: textAppear 1.5s ease-in-out; /* Add text appear animation */
+}
+
+
+
+/* New collection texts styling */
+.hero-left .hero-hand-icon p {
+    font-size: 18px; /* Decrease font size */
+    color: #333; /* Dark gray color for text */
+    margin-bottom: 10px; /* Add bottom margin */
+    animation: textAppear 1.5s ease-in-out; /* Add text appear animation */
+}
+
+/* Products container styles */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align product cards */
+}
+
+.product-card {
+    height: auto;
+    background-color: #fff; /* White background color */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;  
+    max-width: 300px;
+    width: calc(100% - 40px); /* Adjust width to fit within container */
+    transition: all 0.3s ease; /* Add transition effect */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    animation: fadeInUp 1s ease-in-out; /* Add fade-in-up animation */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Add hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Add border radius to product image */
+    transition: transform 0.3s ease; /* Add transition effect for transform */
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05); /* Scale image on hover */
+}
+
+.product-name {
+    font-size: 18px; /* Font size for product name */
+    color: #333; /* Dark gray color for product name */
+}
+
+.product-card h3 {
+    margin: 0;
+    font-size: 18px; /* Font size for product name */
+}
+
+.product-card a {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px; /* Adjust padding */
+    background-color: #3498db; /* Blue background color */
+    text-decoration: none;
+    color: #fff; /* White color for product links */
+    border-radius: 5px; /* Add border radius */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition effects */
+}
+
+.product-card a:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Scale button on hover */
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes textAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes imageFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    padding: 40px;
+    animation: slideIn 1s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-left {
+    flex: 1;
+    padding-right: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: textAppear 1s ease-in-out;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-hand-icon {
+    margin-top: 20px;
+}
+
+.hero-hand-icon p {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: textAppear 1.5s ease-in-out;
+    transition: color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-hand-icon p:first-child {
+    font-family: 'Dancing Script', cursive; /* Add cursive accent to the first line */
+    font-size: 28px; /* Increase font size for accent text */
+    color: #ff4081; /* Add color for accent text */
+}
+.hero-hand-icon #two{
+    font-family: 'Dancing Script', cursive; /* Add cursive accent to the first line */
+    font-size: 28px; /* Increase font size for accent text */
+    color: #ff4081; /* Add color for accent text */
+}
+.hero-hand-icon p:last-child {
+    font-family: 'Dancing Script', cursive; /* Add cursive accent to the first line */
+    font-size: 28px; /* Increase font size for accent text */
+    color: #ff4081; /* Add color for accent text */
+}
+
+.hero-hand-icon p:hover {
+    color: #ff4081;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the image container */
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-right img {
+    width: 100%;
+    max-width: 500px; /* Increase the max-width for larger image */
+    height: auto;
+    display: block;
+    animation: imageFadeIn 1s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateX(-20px); /* Slightly move the image to the left */
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes textAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes imageFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url('img1.jpg') no-repeat center center;
+  background-size: contain; /* Ensure the entire background image is visible without zooming */
+  font-family: 'Playfair Display', serif;
+  border: 5px solid #ffcccc; /* Border style for the whole page */
+  box-sizing: border-box; /* Include border in element's total width and height */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.head1 {
+  color: #7D3C98; /* Light lavender color */
+  font-family: 'Dancing Script', cursive; /* Cursive font style */
+  font-size: 8em; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 30px 0 0;
+  animation: moveInFromLeft 2.5s ease-in-out;
+}
+
+.image-container {
+  animation: moveInFromRight 2.5s ease-in-out;
+}
+
+.image-container img {
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes moveInFromLeft {
+  from { transform: translateX(-30px); }
+  to { transform: translateX(0); }
+}
+
+@keyframes moveInFromRight {
+  from { transform: translateX(30px); }
+  to { transform: translateX(0); }
+}

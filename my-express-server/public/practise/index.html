@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Period Care Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+        /* Hero section styles */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fde1ff; 
+            background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+            padding: 40px;
+        }
+        .hero-left {
+            flex: 1;
+            padding-right: 40px;
+        }
+        .hero-left h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .hero-left p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .hero-right img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar-brand" onclick="showAllProducts()">Period Care Products</div>
+        <a href="pads.html">Pads</a>
+        <a href="tampons.html">Tampons</a>
+        <a href="menstrual-cups.html">Menstrual Cups</a>
+        <a href="period-panties.html">Period Panties</a>
+    </nav>
+    
+    <div class="container" id="content">
+        <div class="hero">
+            <div class="hero-right">
+                <img src="./freegirl-removebg-preview.png" alt="Fashion Girl Image">
+            </div>
+            <div class="hero-left">
+                <h1>New Arrivals</h1>
+                <div class="hero-hand-icon">
+                    <p>New</p>
+                    <p id="two">Collections</p>
+                    <p>For Everyone</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- All Products category content -->
+        <div id="home" class="category active">
+            <h2>All Products</h2>
+            <div class="products-container">
+                
+
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/7h6kIgNNNN')">
+                    <img class="product-image" src="mainpage/HEMOGARD_Crampfree.png" alt="Product Image">
+                    <h3 class="product-name">HEMOGARD Crampfree massager</h3>
+                    <a href="https://dl.flipkart.com/s/7h6kIgNNNN" target="_blank">View on Amazon</a>
+                </div>
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/Foxglow.png" alt="Product Image">
+                    <h3 class="product-name">FoxGlow Electric Heating Belt</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+
+                
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/peesafe.webp" alt="Product Image">
+                    <h3 class="product-name">PEESAFE Menstrual Cup Steam Sterilizer</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/misstake.webp" alt="Product Image">
+                    <h3 class="product-name">MISS TAKE Teen Period Cramp Relief Roll On</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/dl/hoopoes-post-pregnancy-belt-after-delivery-tummy-women-abdominal/p/itm2d4f1d62804eb?pid=SUPG8Z2PHDGAWFMU&cmpid=product.share.pp&_refId=PP.067e3c66-60ba-405c-b2f6-f37db7886384.SUPG8Z2PHDGAWFMU&_appId=WA')">
+                    <img class="product-image" src="mainpage/hoopes.png" alt="Product Image">
+                    <h3 class="product-name"> Hoopoes post pregnancy belt</h3>
+                    <a href="https://dl.flipkart.com/dl/hoopoes-post-pregnancy-belt-after-delivery-tummy-women-abdominal/p/itm2d4f1d62804eb?pid=SUPG8Z2PHDGAWFMU&cmpid=product.share.pp&_refId=PP.067e3c66-60ba-405c-b2f6-f37db7886384.SUPG8Z2PHDGAWFMU&_appId=WA" target="_blank">View on Amazon</a>
+                </div>
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/welme.jpg" alt="Product Image">
+                    <h3 class="product-name"> Welme Period Pain Relief Device</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/hetronics.jpg" alt="Product Image">
+                    <h3 class="product-name">HEATRONICS™ Heating Pad</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/careforce.webp" alt="Product Image">
+                    <h3 class="product-name">Careforce Electric Hot Water Bag</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/sirona.webp" alt="Product Image">
+                    <h3 class="product-name">Sirona Natural Menstrual Cup Wash</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/fitzyportable.jpg" alt="Product Image">
+                    <h3 class="product-name">Frizty Portable Cordless Heating Pad</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage//House.jpg" alt="Product Image">
+                    <h3 class="product-name">House of Quirk Sanitary Napkin Storage Bag</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/buddy.webp" alt="Product Image">
+                    <h3 class="product-name">PeriodBuddy The Charmer Kit</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/mensuration_kit.webp" alt="Product Image">
+                    <h3 class="product-name">Menstruation Kit </h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/NeaHotwith.png" alt="Product Image">
+                    <h3 class="product-name"> Nea Hotwith rubber for Pain Relief</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/URBANYOG.png" alt="Product Image">
+                    <h3 class="product-name">URBANYOG Period Pain Relief Heat Patches</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+
+                <div class="product-card" onclick="openProduct('https://dl.flipkart.com/s/zK6ZIauuuN')">
+                    <img class="product-image" src="mainpage/vwash.png" alt="Product Image">
+                    <h3 class="product-name">vwash Plus Expert Intimate Hygiene Wash</h3>
+                    <a href="https://dl.flipkart.com/s/zK6ZIauuuN" target="_blank">View on Amazon</a>
+                </div>
+            </div>
+        </div>
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+/* General settings for body and elements */
+body, h1, p, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background: url('image.jpg') no-repeat center center;
+  background-size: cover; /* Ensure the image covers the entire background */
+  position: relative;
+}
+
+/* Overlay to darken the background image */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+  z-index: -1;
+}
+
+/* Ensure the content has a background */
+.main-content,
+.symptoms-container,
+.moods-container,
+.music-container,
+.shopping-container {
+  background: rgba(255, 255, 255, 0.9); /* White background with some transparency */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust font colors for readability */
+h1,
+h2,
+p,
+.circle-text,
+.calendar-container p,
+.music-text,
+.shopping-text {
+  color: #fff; /* Bright white color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text-shadow for better readability */
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 10px;
+  color: #fff; /* Bright white color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 1.2rem;
+  color:  #d63384;
+  margin-bottom: 20px;
+}
+
+/* Ensure circles and calendar are visible */
+.circle {
+  background: radial-gradient(circle, #fff 60%, #f8d7da);
+}
+
+#outer-circle {
+  border: 15px solid rgba(214, 51, 132, 0.8); /* Adjust transparency */
+}
+
+.center-image {
+  border: 5px solid rgba(214, 51, 132, 0.8); /* Adjust transparency */
+}
+
+.main-content {
+  border: 3px solid rgba(214, 51, 132, 0.8); /* Adjust transparency */
+}
+
+/* Highlight selected symptoms/moods */
+.selected {
+  border: 2px solid #d63384;
+  border-radius: 5px;
+}
+
+/* Extra styling for layout and spacing */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 200px; /* Move the entire layout 200px from the left */
+}
+
+.circle-calendar-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(100% - 200px); /* Adjusting width to account for left padding */
+  margin-bottom: 40px;
+  gap: 40px; /* Space between circle and calendar */
+}
+
+.circle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px; /* Adjust the margin to create a gap */
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 60%, #f8d7da);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: scale 2s ease-in-out infinite alternate;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+#outer-circle {
+  width: 100%;
+  height: 100%;
+  border: 15px solid #d63384;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circle-text {
+  text-align: center;
+  color: #d63384;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 80%;
+  position: absolute;
+  z-index: 1;
+}
+
+.center-image {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 5px solid #d63384;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.main-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  border: 3px solid #d63384;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-container p {
+  font-size: 1.3rem;
+  color: #d63384;
+  margin-bottom: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  padding: 5px 10px;
+  background-color: #d63384;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#prevMonth {
+  margin-left: 60px;
+}
+
+#nextMonth {
+  margin-right: 60px;
+}
+
+.calendar-header button:hover {
+  background-color: #c82373;
+}
+
+#monthYear {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d63384;
+  margin: 0 20px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.day, .day-name {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  text-align: center;
+  padding: 5px;
+  font-size: 0.9rem;
+  color: #495057;
+  font-weight: bold;
+}
+
+.day.current {
+  background-color: #ffc107;
+}
+
+.day.highlighted {
+  background-color: #d63384;
+  color: #fff;
+}
+.symptoms-moods-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+
+.symptoms-container, .moods-container {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: -120px; /* Adjust the left margin */
+  text-align: left;
+}
+
+
+
+.symptoms-container h2, .moods-container h2 {
+  font-size: 1.8rem;
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.symptoms-scroll, .moods-scroll {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.symptom, .mood {
+  min-width: 100px;
+  text-align: center;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+
+
+.emoji {
+  font-size: 1.5rem;
+}
+
+.symptom-name, .mood-name {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.selected {
+  border: 2px solid #d63384; /* Red border for selected items */
+  border-radius: 5px;
+}
+
+/* Hide the scrollbar */
+.symptoms-scroll, .moods-scroll {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+/* Hide the scrollbar for WebKit (Chrome, Safari, Opera) */
+.symptoms-scroll::-webkit-scrollbar, .moods-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.symptom {
+  min-width: 121px; /* Increase the minimum width */
+  text-align: center;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.extras-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+/* Music section */
+.music-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 48%; /* Ensure the div spans half the width */
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #f8f9fa, #e0e0e0);
+  box-shadow: 10px 10px 20px #c1c1c1, -10px -10px 20px #ffffff;
+  text-align: center;
+  transition: transform 0.3s ease;
+  
+}
+
+.music-text {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Styling for the link */
+.music-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #d63384;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Container for the music icon */
+.music-link .icon-container {
+  width: 150px; /* Increase size */
+  height: 150px; /* Increase size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #d63384, #c1276e);
+  border-radius: 50%;
+  box-shadow: 6px 6px 12px #b02967, -6px -6px 12px #e23b9b;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-link .icon-container img {
+  width: 100px; /* Increase size */
+  height: 100px; /* Increase size */
+}
+
+/* Text inside the link */
+.music-link span {
+  font-size: 2rem; /* Increase font size */
+  font-family: 'Dancing Script', cursive; /* Apply cursive font */
+}
+
+/* Hover effects */
+.music-link:hover {
+  color: #c82373;
+  transform: scale(1.05);
+}
+
+.music-link:hover .icon-container {
+  transform: scale(1.1);
+  box-shadow: 8px 8px 16px #b02967, -8px -8px 16px #e23b9b;
+}
+
+.music-container:hover {
+  transform: scale(1.05);
+}
+
+/* Shopping section */
+.shopping-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 48%; /* Ensure the div spans half the width */
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #f8f9fa, #e0e0e0);
+  box-shadow: 10px 10px 20px #c1c1c1, -10px -10px 20px #ffffff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.shopping-text {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Styling for the link */
+.shopping-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #d63384;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Container for the shopping icon */
+.shopping-link .icon-container {
+  width: 150px; /* Increase size */
+  height: 150px; /* Increase size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #d63384, #c1276e);
+  border-radius: 50%;
+  box-shadow: 6px 6px 12px #b02967, -6px -6px 12px #e23b9b;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shopping-link .icon-container img {
+  width: 120px; /* Increase size */
+  height: 120px; /* Increase size */
+}
+
+/* Text inside the link */
+.shopping-link span {
+  font-size: 2rem; /* Increase font size */
+  font-family: 'Dancing Script', cursive; /* Apply cursive font */
+}
+
+/* Hover effects */
+.shopping-link:hover {
+  color: #c82373;
+  transform: scale(1.05);
+}
+
+.shopping-link:hover .icon-container {
+  transform: scale(1.1);
+  box-shadow: 8px 8px 16px #b02967, -8px -8px 16px #e23b9b;
+}
+
+.shopping-container:hover {
+  transform: scale(1.05);
+}
+

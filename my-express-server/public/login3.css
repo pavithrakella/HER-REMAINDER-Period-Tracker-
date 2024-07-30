@@ -1,0 +1,165 @@
+/* Font Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background: url('pic1.jpg') no-repeat center center;
+  background-size: contain;
+}
+
+.instruction {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.instruction h1 {
+  font-size: 2rem;
+  color: #d63384;
+  margin: 0; /* Remove any default margin */
+  font-weight: 700; /* Added font weight */
+}
+
+.instruction p {
+  font-size: 1.4rem;
+  margin-bottom: 10px; /* Remove any default margin */
+}
+
+/* Animations */
+.calendar-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+  background-color: #E6E6FA;
+  border: 2px solid #7D3C98;
+  animation: fadeIn 1s ease-in-out, scaleUp 0.5s ease-in-out 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.8); }
+  to { transform: scale(1); }
+}
+
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#monthYear {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.day, .day-name {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.day-name {
+  font-weight: bold;
+  background-color: #e9ecef;
+}
+
+.prev-month, .next-month {
+  color: gray;
+}
+
+.current-month {
+  cursor: pointer;
+}
+
+.current {
+  background-color: yellow;
+}
+
+.highlighted {
+  background-color: pink;
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.predicted-period {
+  background-color: lightblue;
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #d63384;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c82373;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Custom styles for Not Sure button */
+.notSure {
+  background-color: #6c757d;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 75px;
+}
+
+.notSure:hover {
+  background-color: #5a6268;
+}
+
+/* Custom styles for Confirm button */
+.confirm {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 75px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.confirm:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+  <h1>Welcome to Your Period Tracker</h1>
+  <p>Track your cycles and manage your health with ease.</p>
+  <div class="content-wrapper">
+    <div class="circle-calendar-wrapper">
+      <div class="circle-container">
+        <div class="circle">
+          <div id="outer-circle"></div>
+          <div class="circle-text">Inner Text</div>
+          <img src="image.jpg" alt="Decorative Image" class="center-image">
+        </div>
+      </div>
+      <div class="main-content">
+        <div id="mainCalendar" class="calendar-container">
+          <p>Click on next month to track your cycle</p>
+        </div>
+      </div>
+    </div>
+    <div class="symptoms-moods-wrapper">
+      <div class="symptoms-container">
+        <h2> Mark your Symptoms</h2>
+        <div class="symptoms-scroll">
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤕</div>
+            <div>Cramps</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🌊</div>
+            <div>Heavy Flow</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤒</div>
+            <div>Hectic Fever</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🥵</div>
+            <div>Hot Flashes</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>😴</div>
+            <div>Insomnia</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>😠</div>
+            <div>Irritability</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤕</div>
+            <div>Itchiness</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤯</div>
+            <div>Migraines</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>😠</div>
+            <div>Moodiness</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤕</div>
+            <div>Muscle Pain</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤕</div>
+            <div>Neck Aches</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🌙</div>
+            <div>Night Sweats</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>😠</div>
+            <div>PMS</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤢</div>
+            <div>Nausea</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤕</div>
+            <div>Backaches</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤕</div>
+            <div>Bloating Cramps</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>😴</div>
+            <div>Fatigue</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>💨</div>
+            <div>Gas</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤯</div>
+            <div>Headaches</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🔴</div>
+            <div>Spotting/Bleeding</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>😓</div>
+            <div>Acne</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>😟</div>
+            <div>Anxiety</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤕</div>
+            <div>Body Aches</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤕</div>
+            <div>Breast Sensitivity</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤕</div>
+            <div>Breast Tenderness</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤕</div>
+            <div>Cervical Firmness</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>💧</div>
+            <div>Cervical Mucus</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🔓</div>
+            <div>Cervical Opening</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🥶</div>
+            <div>Chills</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>😕</div>
+            <div>Confusion</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>💩</div>
+            <div>Constipation</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🍫</div>
+            <div>Cravings</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>💩</div>
+            <div>Diarrhea</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤢</div>
+            <div>Dizziness</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤢</div>
+            <div>Dyspepsia</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>😠</div>
+            <div>Rashes</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>🤕</div>
+            <div>Shoulder Aches</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>😟</div>
+            <div>Stress</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>😟</div>
+            <div>Tension</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>😕</div>
+            <div>Unable to Concentrate</div>
+          </div>
+          <div class="symptom" onclick="toggleHighlight(this)">
+            <div>⚖️</div>
+            <div>Weight Gain</div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="moods-container">
+        <h2> Mark your Moods</h2>
+        <div class="moods-scroll">
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😔</div><div>Depressed</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😢</div><div>Emotional</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😩</div><div>Exhausted</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😐</div><div>Normal</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😢</div><div>Sad</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😴</div><div>Sleepy</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😟</div><div>Stressed</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😣</div><div>Tense</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😡</div><div>Angry</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😰</div><div>Anxious</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😳</div><div>Ashamed</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😏</div><div>Assertive</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😳</div><div>Bashful</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😑</div><div>Bored</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😌</div><div>Confident</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😠</div><div>Cranky</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😞</div><div>Disappointed</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😃</div><div>Excited</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😤</div><div>Frustrated</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😠</div><div>Grumpy</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😊</div><div>Happy</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>🤞</div><div>Hopeful</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😍</div><div>Horny</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>🤒</div><div>Ill</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😠</div><div>Impatient</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>🥰</div><div>In Love</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😐</div><div>Indifferent</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😒</div><div>Jealous</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😞</div><div>Lonely</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😱</div><div>Panicky</div></div>
+          <!-- Newly added moods -->
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😠</div><div>Angry</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>🥵</div><div>Hot</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😨</div><div>Fearful</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😀</div><div>Joyful</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>🥳</div><div>Celebratory</div></div>
+          <div class="mood"  onclick="toggleHighlight(this)"><div>😋</div><div>Playful</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="extras-container">
+    <div class="music-container">
+      <p class="music-text">To calm your mood swings,Click on the icon below to listen to some relaxing music:</p>
+      <a href="music.html" class="music-link">
+        <div class="icon-container">
+          <img src="icon1.png" alt="Music Icon">
+        </div>
+        <span>Explore Relaxing Music</span>
+      </a>
+    </div>
+    <div class="shopping-container">
+      <p class="shopping-text">For products related to period care, Click on the icon below to visit our shopping website:</p>
+      <a href="practise\index.html" class="shopping-link">
+        <div class="icon-container">
+          <img src="icon4.png" alt="Shopping Icon">
+        </div>
+        <span>Explore Period Care Products</span>
+      </a>
+    </div>
+  </div>
+  
+  
+
+  <script src="main1.js"></script>
+</body>
+</html>
